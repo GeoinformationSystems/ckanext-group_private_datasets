@@ -10,22 +10,22 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='''ckanext-group_private_datasets''',
+    name='ckanext-group_private_datasets',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # http://packaging.python.org/en/latest/tutorial.html#version
-    version='0.0.1',
+    version='0.0.2',
 
-    description='''"An extension for making all private datasets in a group accessible to all group members."''',
+    description='An extension for making all private datasets in a group accessible to all group members.',
     long_description=long_description,
 
     # The project's main homepage.
     url='https://github.com/gina-alaska/ckanext-group_private_datasets',
 
     # Author details
-    author='''"Bob Torgerson"''',
-    author_email='''"rltorgerson@alaska.edu"''',
+    author='Bob Torgerson',
+    author_email='rltorgerson@alaska.edu',
 
     # Choose your license
     license='AGPL',
