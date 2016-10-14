@@ -1,6 +1,0 @@
-
-        [ckan.plugins]
-        group_private_datasets=ckanext.group_private_datasets.plugin:Group_Private_DatasetsPlugin
-	[babel.extractors]
-	ckan = ckan.lib.extract:extract_ckan
-    
