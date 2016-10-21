@@ -3,8 +3,6 @@ import ckan.plugins.toolkit as toolkit
 import ckan.authz as authz
 from ckan.logic.action import get
 import auth
-import actions
-import controller
 
 # CKAN Extension Class Group Private Datasets
 class Group_Private_DatasetsPlugin(plugins.SingletonPlugin):
