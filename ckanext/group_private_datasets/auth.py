@@ -12,7 +12,7 @@ from ckan.logic.auth import get_package_object
 @toolkit.auth_allow_anonymous_access
 def package_search(context, data_dict=None):
     # If the user is not authenticated, do not show any private datasets
-    if (context['auth_user_obj'] != None and ('group' in context or "groups" in data_dict['q'])):
+    if ('q' in data_dict.keys() and 'auth_user_obj' in context.keys() and context['auth_user_obj'] != None and ('group' in context or "groups" in data_dict['q'])):
         context['ignore_capacity_check'] = True
     return {'success': True}
 
