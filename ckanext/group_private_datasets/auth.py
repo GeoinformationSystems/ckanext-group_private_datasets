@@ -31,6 +31,9 @@ def package_show(context, data_dict=None):
         if (authz.users_role_for_group_or_org(package.owner_org, user) != None):
             return {'success': True}
 
+        # Modify the context to allow for all datasets to be searched
+        context['ignore_capacity_check'] = True
+
         # Get all groups in the CKAN instance
         all_groups = get.group_list(context, data_dict)
 
